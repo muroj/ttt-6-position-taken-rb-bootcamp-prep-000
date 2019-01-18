@@ -5,7 +5,7 @@ def position_taken?(board, index)
   
   if !empty
     return (position.eql?("X") || position.eql?("O"))
-  elsif
+  else
     return false
   end
   
