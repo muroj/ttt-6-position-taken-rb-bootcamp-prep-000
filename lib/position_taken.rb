@@ -2,12 +2,10 @@
 def position_taken?(board, index)
   position = board[index]
   
-  empty = position.nil? || position.eql?(" ") || position.empty?
-  
-  if !empty
+  if !(position.nil? || position.eql?(" ") || position.empty?)
     return (position.eql?("X") || position.eql?("O"))
   else
-    return empty
+    return false
   end
   
 end
